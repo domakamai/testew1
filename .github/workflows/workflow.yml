@@ -3,11 +3,11 @@ on: push
     steps:
         - uses: actions/checkout@v1
         - name: Deploy Edgeworkers
-          uses: jdmevo123/akamai-edgeworker-action@1.1
-          env:
+        uses: jdmevo123/akamai-edgeworker-action@1.1
+        env:
             EDGERC: ${{ secrets.AKAMAI_EDGERC }}
             #WORKER_DIR: workerdirname # Optional directory for worker code (relative)
-          with:
+        with:
             edgeworkersName: ${{ github.event.repository.name }}
             network: 'staging'
             groupid: '115123' #Akamai GroupID used for registering new edgeworkers
