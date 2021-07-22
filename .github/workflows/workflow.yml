@@ -8,4 +8,4 @@ steps:
       with:
         edgeworkersName: ${{ github.event.repository.name }}
         network: 'staging'
-        groupid: '6281' #Akamai GroupID used for registering new edgeworkers
+        groupid: '115123' #Akamai GroupID used for registering new edgeworkers
