@@ -9,7 +9,7 @@ jobs:
         - name: Deploy Edgeworkers
           uses: jdmevo123/akamai-edgeworker-action@1.1
           env:
-              EDGERC: ${{ secrets.AKAMAI_EDGERC }}
+              EDGERC: ${{ secrets.EDGERC }}
               #WORKER_DIR: workerdirname # Optional directory for worker code (relative)
           with:
               edgeworkersName: ${{ github.event.repository.name }}
